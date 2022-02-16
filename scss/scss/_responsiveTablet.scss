@@ -1,0 +1,75 @@
+/* TABLET */
+
+@media (min-width: 481px) and (max-width: 1023px){
+    body {
+        height: 100vh;
+        background-image: linear-gradient(green, rgb(241, 241, 241));
+        background-position: top center;
+        background-repeat: $noRepetir;
+        background-size: cover;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    header{
+            border-radius: 4px;
+            text-align: $alineado;
+            font-size: $font;
+            padding: 10px;
+    }
+   span {
+    margin-bottom: 5px;
+    padding: 20px;
+    height: 10px;
+    text-align: $alineado;
+    border-radius: 5px;
+    text-decoration: none;
+   }
+   span:hover {
+       background-color: white;
+       color: green ;
+   }
+   /* Articulos de galeria */
+   article {
+
+    border-radius: 4px;
+    margin: 5px;
+    text-align: $alineado;
+    font-size: $font;
+    padding: 10px;
+   }
+  aside {
+    text-align: $alineado;
+    padding: 10px;
+}
+
+footer{
+    border-radius: 4px;
+    text-align: $alineado;
+    font-size: $font;
+    padding: 10px;
+ /* GRIDS POR AREAS */
+}
+#gridAreas {
+    display: grid;
+    /* grid por areas */
+    grid-template-areas:
+    "cabeza cabeza cabeza"/* fila 1 */
+    "menu menu menu"
+    "productos productos productos"/* fila 2 */
+    "video video video"/* fila 3 */
+    "pie pie pie "/* fila 4 */
+    ;
+    grid-template-columns: 15% auto 20%;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+}
+ /* MENU FLEX */
+ .flexMenu {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+ }
+ /* GALERIA FLEX */
+ /* .productosFlex {
+    display: flex;
+    flex-flow: row nowrap;
+} */
+}

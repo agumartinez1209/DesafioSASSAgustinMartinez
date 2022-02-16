@@ -1,0 +1,19 @@
+
+ @import "scss/estiloGeneral";
+ @import "scss/areasGrid";
+
+
+a{
+    color: black;
+    text-decoration: none;
+}
+$alineado: center;
+$noRepetir: no-repeat;
+$font: 0.75rem;
+
+
+@import "scss/responsiveDesktop";
+@import "scss/responsiveTablet";
+@import "scss/responsiveSmartphone";
+@import "scss/animacionTransicion";
+
